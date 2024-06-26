@@ -1,6 +1,7 @@
 {
   "name": "docs",
   "version": "0.0.0",
+  "homepage": "https://itsadeadh2.github.io/commodore-landing-docs/",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
