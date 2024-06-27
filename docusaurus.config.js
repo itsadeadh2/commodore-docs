@@ -61,7 +61,7 @@ const config = {
         title: 'Docs',
         logo: {
           alt: 'My Site Logo',
-          src: '/commodore-landing/img/logo.svg',
+          src: 'img/logo.svg',
         },
         items: [
           {
