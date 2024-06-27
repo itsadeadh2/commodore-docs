@@ -6,6 +6,8 @@ sidebar_position: 2
 
 SPA landing page made with React.
 
+See on **[GitHub](https://github.com/itsadeadh2/commodore-landing)**
+
 ## Stack
 
 **[Node.js](https://nodejs.org/pt) | [React](https://react.dev/) | [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) | [GitHub Pages](https://pages.github.com/)**

@@ -2,9 +2,11 @@
 sidebar_position: 3
 ---
 
-# Email Sender Service
+# Email Sender
 
 A REST API that exposes endpoints for email operations.
+
+See on **[GitHub](https://github.com/itsadeadh2/email-sender)**
 
 ## Stack
 
