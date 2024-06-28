@@ -13,6 +13,8 @@ When we strip away the underlying infrastructure tools, we are left with the fol
 - **[Commodore Landing](/services/commodore-landing)**
 - **[Email Sender](/services/email-sender)**
 - **[Email Worker](/services/email-worker)**
+- **[Users Manager](/services/users-manager)**
+- **[Games Service](/services/games-service)**
 
 The main idea behind this layout is to isolate most services from incoming internet traffic for security reasons while allowing inter-service communication.
 
