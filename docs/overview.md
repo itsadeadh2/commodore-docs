@@ -5,6 +5,11 @@ sidebar_position: 1
 
 # Introduction
 
+:::warning[No longer deployed]
+Commodore Landing turned out to be a very expensive side project.
+As of today (July 01, 2024) it is no longer deployed on aws.
+:::
+
 
 ## Why?
 
