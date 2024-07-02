@@ -15,7 +15,7 @@ See on **[GitHub](https://github.com/itsadeadh2/commodore-landing)**
 
 ## Purpose
 
-Commodore Landing serves as a landing page for users to interact with the **[API Gateway](./api-gateway.md)**.
+Commodore Landing serves as a landing page for users to interact with the **[REST API](./API.md)**.
 
 ![commodore landing](./img/commodore_landing.gif)
 
