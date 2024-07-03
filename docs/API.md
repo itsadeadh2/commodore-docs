@@ -6,7 +6,7 @@ sidebar_position: 2
 
 A REST API that exposes endpoints for general operations.
 
-See on **[GitHub](https://github.com/itsadeadh2/email-sender)**
+See on **[GitHub](https://github.com/itsadeadh2/itsanapi)**
 
 ## Stack
 
