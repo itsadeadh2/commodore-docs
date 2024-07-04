@@ -4,79 +4,68 @@ sidebar_position: 2
 
 # Stack
 
-Languages, tools and architecture
+Languages, tools, and architecture
 
 ## Language/Framework
 
-The REST API is made with **[Python 3.12.4](https://www.python.org/)** and **[Flask](https://flask.palletsprojects.com/en/3.0.x/)**
+The REST API is built with **[Python 3.12.4](https://www.python.org/)** and **[Flask](https://flask.palletsprojects.com/en/3.0.x/)**.
 
-Python was chosen because it is a language I have been using the most recently
-and flask was chosen because I wanted to refresh my knowledge about it.
+### Why Python and Flask?
 
-There weren't other requirements that made me choose Python
-it could have been Node with JavaScript and I believe it would work the same way.
-
-Flask on the other hand, besides being a framework that I wanted to get back to speed with
-also seems to be more lightweight and less opinionated than Django.
-
-Being less opinionated and more "bare bones" was an important thing to me since I wanted to
-test out some architectural patterns as well as to try handling things like authentication all
-by myself instead of relying on a framework.
+- **Python**: Chosen because it's the language I've been using the most recently. Its simplicity and readability make development faster and more efficient.
+- **Flask**: Selected to refresh my knowledge. Flask is lightweight and less opinionated compared to Django, providing more flexibility for experimenting with architectural patterns and handling features like authentication independently.
 
 ## Tools
 
-The tools I used in the development process were:
-1. Python's `unittest` library for automated tests
-2. Python's `coverage` library for test coverage reports
-3. Python's `flake8` for linting
-4. Docker for containerization
-5. AWS for deployment
-6. GitHub for VCS
-7. GitHub Actions for CI/CD
+The tools used in the development process include:
+1. `unittest` - For automated tests.
+2. `coverage` - For test coverage reports.
+3. `flake8` - For linting.
+4. **Docker** - For containerization.
+5. **AWS** - For deployment.
+6. **GitHub** - For version control.
+7. **GitHub Actions** - For CI/CD.
 
 ## Architecture
 
-The project was structured using a **[layered architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf)** approach.
-Until now, I have chosen to use tree layers: **infrastructure, domain and setup**.
+The project follows a **[layered architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf)** approach, divided into three layers: **Setup, Infrastructure, and Domain**.
 
 ### Setup
 
-The setup layer is responsible for components that help bootstrap the application.
-Originally these components were also a parte of the **infrastructure** layer but as they grew
-in size and complexity I decided to create a separate layer for them.
-Most of these components interact directly with the flask `app` and add additional functionality into it
-before the app is served.
+This layer is responsible for bootstrapping the application. Initially part of the **Infrastructure** layer, it was separated due to growing size and complexity. Components in this layer interact directly with the Flask `app`, adding functionality before the app is served.
 
-Things such as **configs, cors, logger, dependency injector and blueprints registering** are all done in this layer.
+Key components include:
+- **Configurations**
+- **CORS**
+- **Logger**
+- **Dependency Injector**
+- **Blueprints Registration**
 
 ### Infrastructure
 
-The infrastructure layer is responsible for base components that are required in order to achieve the desired functionality
-of the domain.
+The Infrastructure layer contains base components required for domain functionality.
 
-Thing such as **custom errors, services, schemas and blueprints** are all stored in this layer.
+Key components include:
+- **Custom Errors**
+- **Services**
+- **Schemas**
+- **Blueprints**
 
 ### Domain
 
-The domain layer is responsible for the actual domain/business logic that we want to achieve for a specific resource.
-The components in this layer can be seen as orchestrators that basically use the available resources
-on the infrastructure layer to achieve the desired outcome.
+The Domain layer handles the actual business logic for specific resources. Components in this layer act as orchestrators, using infrastructure resources to achieve desired outcomes.
 
-For now, this layer only contain **handlers** that are directly tied to a specific endpoint resource.
+Current components:
+- **Handlers** tied directly to endpoint resources.
 
 ### Conclusion
 
-With this layered architecture, the application achieves a great degree of modularity and
-separation of concerns.
-
-With this approach I was able to change significant parts of the implementation multiple times in the past few days.
-Such as implementing OAuth, changing blueprints from a functional approach to a class approach, adding dependency injection
-and even with all of these modifications, the core functionality of the API endpoints were still the same.
+This layered architecture ensures modularity and separation of concerns. It allows for significant changes without affecting core functionality, such as implementing OAuth, transitioning blueprints to a class-based approach, and adding dependency injection.
 
 :::tip[Additional Info]
 
-- This project uses an **object-oriented** approach
-- This project makes heavy use of **dependency injection**
-- Most of the third party libraries used are wrapped inside a **service** or a **client**
-  - I might implement interfaces for all of these in the future to enforce the **Dependency Inversion Principle**
+- The project uses an **object-oriented** approach.
+- It heavily employs **dependency injection**.
+- Most third-party libraries are wrapped inside a **service** or **client**.
+  - Future plans include implementing interfaces to enforce the **Dependency Inversion Principle**.
 :::
