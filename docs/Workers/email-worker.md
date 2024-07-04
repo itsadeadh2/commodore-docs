@@ -23,7 +23,7 @@ scenarios might be included in the future.
 The reason behind creating this worker was to make the email sending process asynchronous.
 
 Sending emails can be both a resource and time-consuming task. If I were to keep this functionality
-within the **[REST API](../REST%20API)** it would very likely have made the response time of the endpoint
+within the **[REST API](../REST API)** it would very likely have made the response time of the endpoint
 way too slow, so I decided to use a worker instead.
 
 ## Infrastructure
