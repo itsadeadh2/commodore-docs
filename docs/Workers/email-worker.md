@@ -21,7 +21,7 @@ The Email Worker handles all the heavy lifting required for sending emails. Curr
 
 ## Reasoning
 
-The primary reason for creating this worker was to make the email sending process asynchronous. Sending emails can be resource-intensive and time-consuming. Keeping this functionality within the **[REST API](../REST API)** could significantly slow down endpoint response times. Therefore, I opted for a worker to handle this task separately.
+The primary reason for creating this worker was to make the email sending process asynchronous. Sending emails can be resource-intensive and time-consuming. Keeping this functionality within the **[REST API](/category/rest-api)** could significantly slow down endpoint response times. Therefore, I opted for a worker to handle this task separately.
 
 ## Infrastructure
 
