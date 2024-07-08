@@ -19,6 +19,9 @@ By accessing the root route of the API (https://itsadeadh2.com), you will be red
 
 ## Send Contact Info
 
+:::warning[email required]
+:::
+
 The `/api/contact` endpoint allows users to submit an email address and receive my contact information via email. It also stores the provided email in a DynamoDB database to keep track of who requested my contact info.
 
 :::info
@@ -29,8 +32,13 @@ Future Plans:
 - No email required if the user is **logged in**.
   :::
 
-## Login/Register with Google
+## Register/Login/Logout
 
-The API enables users to register or log in with Google. This functionality is designed primarily for use with the **[frontend](../commodore-landing.md)**.
+The api allows users to register, log in and log out.
+By doing so you'll get access to some additional functionalities such as the games
 
-Currently, there isn't a compelling reason for users to register or log in, but I plan to add features that will require user registration.
+## Hangman 
+:::warning[registered users only]
+:::
+By using the resources on the `/api/games/hangman` endpoint you can play a quick game of [hangman](https://en.wikipedia.org/wiki/Hangman_(game)) on the api.
+And it also stores your scores on a leaderboard.
