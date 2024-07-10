@@ -13,7 +13,7 @@ For detailed information, check out the **[Swagger documentation](https://itsade
 
 ## Route Traffic to Landing Page
 
-By accessing the root route of the API (https://itsadeadh2.com), you will be redirected to my landing page hosted on GitHub Pages (https://itsadeadh2.github.io/commodore-landing/).
+By accessing the root route of the API (https://itsadeadh2.com), you will be redirected to my landing page hosted on GitHub Pages (https://commodore.itsadeadh2.com).
 
 **[Why GitHub Pages?](/#infrastructure)**
 
