@@ -3,11 +3,12 @@ slug: /
 sidebar_position: 1
 ---
 
-# Commodore Landing
+# [Commodore Landing](https://itsadeadh2.com/)
 
 Welcome to the **Commodore Landing** SPA (Single Page Application) landing page, crafted with React. This page emulates a classic Commodore 64 terminal for an interactive and nostalgic user experience.
 
-🚀 **See the code on [GitHub](https://github.com/itsadeadh2/commodore-landing)**
+🚀 **See the code on [GitHub](https://github.com/itsadeadh2/commodore-landing)**  
+✨ **Access the [frontend](https://itsadeadh2.com/)**
 
 ## Stack
 
