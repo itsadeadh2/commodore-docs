@@ -3,19 +3,19 @@ slug: /
 sidebar_position: 1
 ---
 
-# [Commodore Landing](https://itsadeadh2.com/)
+# Commodore Landing
 
 Welcome to the **Commodore Landing** SPA (Single Page Application) landing page, crafted with React. This page emulates a classic Commodore 64 terminal for an interactive and nostalgic user experience.
 
 🚀 **See the code on [GitHub](https://github.com/itsadeadh2/commodore-landing)**  
-✨ **Access the [frontend](https://commodore.itsadeadh2.com/)**
+✨ **Access the [website](https://commodore.itsadeadh2.com/)**
 
 ## Stack
 
 This project is built with the following technologies:
 - **[Node.js](https://nodejs.org/pt)**
 - **[React](https://react.dev/)**
-- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
+- **[TypeScript](https://www.typescriptlang.org/)**
 - **[GitHub Pages](https://pages.github.com/)**
 
 ## Purpose
@@ -56,5 +56,11 @@ While this setup was a great learning experience and performed well, it was ulti
 ### Current Setup
 
 To optimize costs and deployment efficiency, Commodore Landing was migrated to **GitHub Pages**, where it is **[currently deployed](https://itsadeadh2.github.io/commodore-landing/)**. This new setup is more streamlined and cost-effective.
+:::note
+Even though the project is deployed in github pages, it is available at [commodore.itsadeadh2.com](https://commodore.itsadeadh2.com)
+The reason for that is that the website uses **cookies and csrf** tokens to handle authentication, which can't be assigned to the `.github.io` domain
+since it is a [public suffix](https://publicsuffix.org/list/public_suffix_list.dat).
+
+:::
 
 Enjoy the nostalgic experience of Commodore Landing and feel free to explore the code and functionality on GitHub! ✨
