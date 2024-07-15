@@ -11,15 +11,8 @@ Discover what the API can do!
 :::warning[email required]
 :::
 
-The `/contact` endpoint allows users to submit an email address and receive my contact information via email. It also stores the provided email in a DynamoDB database to keep track of who requested my contact info.
+The `/contact` endpoint allows users to submit an email address and receive my contact information via email. It also stores the provided email in the database to keep track of who requested my contact info.
 
-:::info
-Future Plans:
-- Simplify this flow.
-- Provide basic contact info without requiring an email.
-- Offer additional contact info upon receiving the user's email.
-- No email required if the user is **logged in**.
-  :::
 
 ## Register/Login/Logout
 
@@ -28,16 +21,16 @@ By doing so you'll get access to some additional functionalities such as the gam
 
 It is possible to log in using sessions with CSRF or JWT tokens.
 
-## Hangman 
+## Hangman
 :::warning[registered users only]
 :::
 By using the resources on the `/hangman` endpoint you can play a quick game of [hangman](https://en.wikipedia.org/wiki/Hangman_(game)) on the api.
 And it also stores your scores on a leaderboard.
 
-## Projects 
-The `/projects` endpoint returns all of my pet projects that I have registered within the application.  
+## Projects
+The `/projects` endpoint returns all of my pet projects that I have registered within the application.
 
 ## Scores
 
-The `/scores` endpoint returns a list of scores for the games available in the api. At the moment, only **Hangman** is available, 
+The `/scores` endpoint returns a list of scores for the games available in the api. At the moment, only **Hangman** is available,
 but, it is implemented in a way that would make it easily extensible if any other games are added in the future.

@@ -11,15 +11,8 @@ Discover what the API can do!
 :::warning[email required]
 :::
 
-The `/contact` endpoint allows users to submit an email address and receive my contact information via email. It also stores the provided email in a DynamoDB database to keep track of who requested my contact info.
+The `/contact` endpoint allows users to submit an email address and receive my contact information via email. It also stores the provided email in the database to keep track of who requested my contact info.
 
-:::info
-Future Plans:
-- Simplify this flow.
-- Provide basic contact info without requiring an email.
-- Offer additional contact info upon receiving the user's email.
-- No email required if the user is **logged in**.
-  :::
 
 ## Register/Login/Logout
 
