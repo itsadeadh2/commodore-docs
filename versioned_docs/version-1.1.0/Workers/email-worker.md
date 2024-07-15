@@ -14,7 +14,6 @@ This project is built with the following technologies:
 - **[Python](https://www.python.org/)**
 - **[SQS](https://aws.amazon.com/sqs/)**
 - **[AWS Lambda](https://aws.amazon.com/ecs/)**
-- **[Docker](https://docs.docker.com/guides/docker-overview/)**
 
 ## Purpose
 
