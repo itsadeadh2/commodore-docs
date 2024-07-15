@@ -14,7 +14,6 @@ This project is hosted on **AWS**, utilizing the following resources:
 - **Elastic Container Registry (ECR)**: Private Docker registry.
 - **Elastic Container Service (ECS)**: Container management.
 - **CloudWatch**: Logging service.
-- **AWS RDS**: Database for persistence (PostgreSQL).
 - **Elastic Load Balancer (ELB)**: Routing, load balancing, and SSL termination.
 - **VPC and Public Subnet**: Networking components.
 - **Route 53**: Domain management service.
@@ -24,8 +23,14 @@ All these resources are automatically created and configured using a set of **Cl
 ![Infrastructure](./img/rest_api_infra.png)
 
 :::note
-I **chose** not to deploy the database into a private subnet to save costs on **AWS Nat Gateways**.  
-It is not ideal, but it wasn't an uninformed decision.
+Initially this infrastructure had the postgres database deployed on an **AWS RDS** instance.  
+That worked like a charm, but it was expensive, so I decided to change the implementation to have 
+a container inside the ecs service running a postgresql image.
+
+The container uses an **EFS** file system to persist the postgresql data in case the instance goes down
+at for any reason.
+
+This is not ideal, **but** is cheaper, and as a side project, costs are more important than reliability/security at this point.
   :::
 ## CI/CD
 
